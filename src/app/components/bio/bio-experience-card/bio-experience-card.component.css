@@ -1,0 +1,28 @@
+.bio-experience-card{
+    margin-top: var(--row-gap);
+    border-radius: 50px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title{
+    text-align: center;
+}
+
+.listing{
+    margin: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .bio-experience-card{
+        height: 550px;
+        width: 500px;
+        gap: 4%;
+    }
+
+    .listing{
+        margin: 0.2em;
+        margin-bottom: 2em;
+    }
+}

@@ -1,0 +1,14 @@
+<div appFadeInOnScroll (finishedFadingEvent)="handleFinishedFadingEvent($event)" class="card bio-experience-card fade-in">
+    <div *ngIf="showInformation">
+        <h1 class="title">Experience</h1>
+        <p appTextAnimation [text]="experience[0]" [delay]="delay" class="listing"></p>
+        <p appTextAnimation [text]="experience[1]" [delay]="delay" class="listing"></p>
+        <p appTextAnimation [text]="experience[2]" [delay]="delay" class="listing"></p>
+    </div>
+    <div *ngIf="showInformation">
+        <h1 class="title">Education</h1>
+        <p appTextAnimation [text]="education[0]" [delay]="delay" class="listing"></p>
+        <p appTextAnimation [text]="education[1]" [delay]="delay" class="listing"></p>
+    </div>
+
+</div>

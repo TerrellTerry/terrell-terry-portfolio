@@ -1,0 +1,30 @@
+.bio-module-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10%; /* Gap between columns */
+    margin-top: var(--row-gap); 
+    align-items: center;
+    height: 33%;
+}
+
+.alignment{
+
+}
+
+.bio-module-container:last-child{
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .bio-module-container {
+        grid-template-columns: unset;
+        display: flex;
+        flex-direction: column;
+    }
+    .alignment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

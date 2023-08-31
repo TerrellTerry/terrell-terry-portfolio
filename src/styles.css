@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: ASH;
+    src: url('/assets/fonts/Ash.ttf');
+}
+@font-face {
+    font-family: DOS;
+    src: url('assets/fonts/ModernDOS9x16.ttf');
+}
+@font-face {
+    font-family: Modern;
+    src: url('/assets/fonts/Modern_Mono.otf');
+}
+
+:root {
+    --row-gap: 4%;
+  }
+
+html{
+    background-color: black;
+}
+
+body{
+    padding: 0 15%; /* Set distance from the sides */
+    overflow-x: hidden;
+
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ASH{
+    font-family: ASH;
+}
+
+.card{
+    padding: 1em 1.5em;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(42, 42, 42);
+    border-radius: 7%;
+    font-family: DOS, Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    position: relative; /* Required for cursor positioning */
+}
+
+.cursor {
+    animation: cursor-blink 0.8s infinite;
+  }
+  
+  @keyframes cursor-blink {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .button {
+    font-family: DOS, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.button.inactive:hover {
+    opacity: 0.5;
+}
+
+.button.active {
+    background-color: #7b7b7b;
+    color: #fff;
+}
+
+.button.inactive{
+
+}
+
+.button.inactive:active {
+    transform: translateY(2px); /* Adjust the distance as needed */
+}
+
+/* Define the initial state for the fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Apply the fade-in effect when the element intersects the viewport */
+  .appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+@media screen and (max-width: 768px) {
+    :root{
+        --row-gap: 8%
+    }
+}

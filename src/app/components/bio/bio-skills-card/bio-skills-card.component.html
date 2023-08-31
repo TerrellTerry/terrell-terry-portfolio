@@ -1,0 +1,36 @@
+<div appFadeInOnScroll (finishedFadingEvent)="handleFinishedFadingEvent($event)" class="card skill-card fade-in">
+    <div class="button-container">
+        <button [ngClass]="{ 'button': true, 'active': isShowingSoftware, 'inactive': !isShowingSoftware }" (click)="changeCategory('software')">SOFTWARE</button>
+        <button [ngClass]="{ 'button': true, 'active': !isShowingSoftware, 'inactive': isShowingSoftware}" (click)="changeCategory('games')">GAMES</button>
+    </div>
+    <div class="skill-grid" *ngIf="fadedIn">
+        <div class="skill-grid-item">
+            <h5>Skill Category</h5>
+            <p appTextAnimation [text]="gamesSkillsText" [delay]="delay" *ngIf="!isShowingSoftware">
+            </p>
+            <p appTextAnimation [text]="softwareSkillsText" [delay]="delay" *ngIf="isShowingSoftware">
+            </p>
+        </div>
+        <div class="skill-grid-item">
+            <h5>Skill Category</h5>
+            <p appTextAnimation [text]="gamesSkillsText" [delay]="delay" *ngIf="!isShowingSoftware">
+            </p>
+            <p appTextAnimation [text]="softwareSkillsText" [delay]="delay" *ngIf="isShowingSoftware">
+            </p>
+        </div>
+        <div class="skill-grid-item">
+            <h5>Skill Category</h5>
+            <p appTextAnimation [text]="gamesSkillsText" [delay]="delay" *ngIf="!isShowingSoftware">
+            </p>
+            <p appTextAnimation [text]="softwareSkillsText" [delay]="delay" *ngIf="isShowingSoftware">
+            </p>
+        </div>
+        <div class="skill-grid-item">
+            <h5>Skill Category</h5>
+            <p appTextAnimation [text]="gamesSkillsText" [delay]="delay" *ngIf="!isShowingSoftware">
+            </p>
+            <p appTextAnimation [text]="softwareSkillsText" [delay]="delay" *ngIf="isShowingSoftware">
+            </p>
+        </div>
+    </div>
+</div>
