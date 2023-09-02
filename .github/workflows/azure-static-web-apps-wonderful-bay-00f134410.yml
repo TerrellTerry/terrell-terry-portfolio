@@ -33,6 +33,10 @@ jobs:
           app_build_command: 'npm install --force'
           api_build_command: 'npm install --force'
           ###### End of Repository/Build Configurations ######
+        env:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_BAY_00F134410 }}
+          NPM_CONFIG_FORCE: true
+          NPM_CONFIG_LEGACY_PEER_DEPS: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
