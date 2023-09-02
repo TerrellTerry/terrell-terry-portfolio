@@ -1,6 +1,30 @@
 <div class="card project-card fade-in" appFadeInOnScroll>
+    <div class="description-container">
+        <div class="description">
+            <div *ngIf="showing === 'desc' ">
+                <div>
+                    <h2 appTextAnimation [delay]="10" [text]="project.title"></h2>
+                    <p appTextAnimation [delay]="10" [text]="project.description"></p>
+                </div>
+            </div>
+            
+            <div *ngIf="showing === 'moreInfo' ">
+                <mat-icon (click)="changeShowing('desc')" class="back">arrow_back</mat-icon>
+                <h3 *ngFor="let n of project.info" appTextAnimation [delay]="10" [text]="n"></h3>
+            </div>
+            <div *ngIf="showing === 'skills'">
+                <mat-icon (click)="changeShowing('desc')" class="back">arrow_back</mat-icon>
+                <p appTextAnimation [delay]="10" [text]="project.skills"></p>
+            </div>
+        </div>
+
+        
+        <div class="button-container">
+            <button (click)="changeShowing('skills')" class="button project-button" [ngClass]="{'active': showing === 'skills', 'inactive': showing !== 'skills'}">Tech Used</button>
+            <button *ngIf="project.info.length >= 0" (click)="changeShowing('moreInfo')" class="button project-button"  [ngClass]="{'active': showing === 'moreInfo', 'inactive': showing !== 'moreInfo'}">More Info</button>
+        </div>
+    </div>
     <div>
-        <h2>{{project.title}}</h2>
-        <p appTextAnimation [delay]="10" [text]="project.description"></p>
+        <app-media class="media" [project]="project"></app-media>
     </div>
 </div>

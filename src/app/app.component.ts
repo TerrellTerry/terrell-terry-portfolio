@@ -14,4 +14,5 @@ import { map } from 'rxjs/operators';
 })
 export class AppComponent {
   title = 'Terrell Terry Portfolio';
+  playerId = "1ozGKlOzEVc"
 }

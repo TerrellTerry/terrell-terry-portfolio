@@ -1,0 +1,25 @@
+.contact-card{
+    margin-top: var(--row-gap);
+    height: 800px;
+    width: 100%;
+    padding: 3em 8em;
+}
+
+.section-title{
+    font-family: ASH, Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: var(--row-gap);
+}
+
+div > h3{
+    font-weight: normal;
+    font-size: 50px;
+}
+
+fa-icon{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}

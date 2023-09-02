@@ -3,12 +3,47 @@
     grid-template-columns: 1fr 1fr;
     gap: 10%;
     margin-top: var(--row-gap);
-    align-items: center;    
+    align-items: center;
+    border-radius: 25px;
 }
 
-.media{
-    width: 500px;
-    height: 500px;
-    background-color: black;
-    justify-self: center;
+.description-container{
+    display: grid;
+    grid-template-rows: 1f 1fr;
+}
+
+.button-container{
+    position: absolute;
+    bottom: 25px;
+    left: 75px;
+}
+
+button{
+    margin-right: 50px;
+    padding: 1em 3em;
+}
+
+.description{
+    margin-left: 3em;
+    /* margin-bottom: 8em; */
+    border: 4em 4em;
+}
+
+.back {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    right: 95%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.back:hover{
+    background-color: rgba(0,0,0,0.8);
 }

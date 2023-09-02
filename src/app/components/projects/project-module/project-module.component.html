@@ -1,6 +1,14 @@
 <div>
-    <h1>Projects</h1>
+    <h1 class="section-title">Projects</h1>
+</div>
+<div class="button-container">
+    <button [ngClass]="{ 'button': true, 'active': showing === 'all', 'inactive': showing !== 'all' }" (click)="changeCategory('all')">ALL</button>
+    <button [ngClass]="{ 'button': true, 'active': showing === 'software', 'inactive': showing !== 'software'}" (click)="changeCategory('software')">SOFTWARE</button>
+    <button [ngClass]="{ 'button': true, 'active': showing === 'games', 'inactive': showing !== 'games'}" (click)="changeCategory('games')">GAMES</button>
 </div>
 <div>
-    <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
+    <div *ngFor="let project of projects">
+        <app-project-card *ngIf="project.category === showing || showing === 'all'" [project]="project"></app-project-card>
+    </div>
+
 </div>

@@ -1,3 +1,20 @@
 .section-title{
-    
+    font-family: ASH, Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: var(--row-gap);
+    margin-bottom: var(--row-gap);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+    margin-bottom: var(--row-gap);
+}
+
+button{
+    font-size: 16px;
+    padding: 1em 4em;
 }

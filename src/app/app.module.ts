@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +15,11 @@ import { BioExperienceCardComponent } from './components/bio/bio-experience-card
 import { ProjectModuleComponent } from './components/projects/project-module/project-module.component';
 import { ProjectCardComponent } from './components/projects/project-card/project-card.component';
 import { MediaComponent } from './components/media/media.component';
-
+import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
+import { ContactComponent } from './components/contact/contact/contact.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -29,11 +34,17 @@ import { MediaComponent } from './components/media/media.component';
     BioExperienceCardComponent,
     ProjectModuleComponent,
     ProjectCardComponent,
-    MediaComponent
+    MediaComponent,
+    ScrollTopComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    NgxYoutubePlayerModule.forRoot(),
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

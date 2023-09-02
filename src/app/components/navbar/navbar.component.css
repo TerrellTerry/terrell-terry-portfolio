@@ -15,6 +15,10 @@
     height: 50px; /* Adjust the height as needed */
 }
 
+.nav-item:hover{
+    cursor:pointer;
+}
+
 .nav-item::before {
     content: '';
     position: absolute;

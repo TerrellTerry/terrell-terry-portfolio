@@ -1,0 +1,17 @@
+<div class="media-container">
+    <mat-icon (click)="nextSlide(-1)" class="prev">arrow_back</mat-icon>
+    <mat-icon (click)="nextSlide(1)" class="next">arrow_forward</mat-icon>
+    <!-- Image Div -->
+    <div class="image-container" *ngIf="!this.currentMedia.youtube">
+        <img class="image" [src]="currentMedia.url" alt="Image for the project."/>
+    </div>
+    <!-- Video Div -->
+    <div class="youtube-container" *ngIf="this.currentMedia.youtube">
+        <p style="color: white;"></p>
+        <youtube-player
+        [videoId]="currentMedia.url"
+        [height]="400"
+        [width]="600"
+      ></youtube-player>
+    </div>
+</div>

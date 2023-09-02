@@ -9,7 +9,7 @@ export class NavbarComponent {
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {}
 
   scrollToSection(targetSection:string) {
-    const targetElement = this.elementRef.nativeElement.querySelector(targetSection);
+    const targetElement = document.querySelector(targetSection);
     
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });

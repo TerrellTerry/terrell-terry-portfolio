@@ -1,10 +1,11 @@
 .bio-module-container{
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 10%; /* Gap between columns */
+    grid-template-columns: 1fr 1fr; 
+    gap: 10%; 
     margin-top: var(--row-gap); 
+    margin-bottom: var(--row-gap);
     align-items: center;
-    height: 33%;
+    /* height: 33%; This broke after adding angular material, not sure why. Removing it doesn't seem to change anything*/
 }
 
 .alignment{

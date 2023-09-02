@@ -1,9 +1,7 @@
 <nav class="navbar">
     <a href="#" class="nav-item ASH">LOGO</a>
-    <a href="#" (click)="scrollToSection('#bio')" class="nav-item ASH">BIO</a>
-    <a href="#" (click)="scrollToSection('#work')" class="nav-item ASH">WORK</a>
-    <a href="#" (click)="scrollToSection('#contact')" class="nav-item ASH">CONTACT</a>
+    <a (click)="scrollToSection('#bio')" class="nav-item ASH">BIO</a>
+    <a (click)="scrollToSection('#work')" class="nav-item ASH">WORK</a>
+    <a (click)="scrollToSection('#contact')" class="nav-item ASH">CONTACT</a>
 </nav>
-<app-bio-module id="bio"></app-bio-module>
-<app-project-module id="work"></app-project-module>
 <!-- <p style="color:wheat" id="bio">This is a bio</p>    -->
