@@ -29,8 +29,7 @@ export class ProjectModuleComponent {
       {url: 'assets/images/projects/default.png', youtube:false}
     ]  },    { title: 'Town Review Board',
     description: 'The Town Review board is an application for a small local town. The application allows constituents to submit issues that they have noticed in the town. The review board members can look over these issues. Board members can then create meetings which can be viewed by constituents and display information on what needs to be discussed.',
-    info:['Github: https://github.com/TerrellTerry/Town-Review-Board',
-    'Website: https://terrellterrystorage.z13.web.core.windows.net/'],
+    info:['Github: https://github.com/TerrellTerry/Town-Review-Board'],
     skills:'Java | HTML | CSS | JavaScript | Javalin | PostgreSQL | Azure | Docker',
      category:'software',
       media:[
@@ -43,9 +42,8 @@ export class ProjectModuleComponent {
      media:[
     {url: 'assets/images/projects/default.png', youtube:false}
   ]  },    { title: 'Daycare Report Card System<br><em>Full Stack Web Application</em>',
-  description: "The Daycare Report Card System is an application for recording the behavior of students at a local daycare center. Teachers can make grades for students throughout the day noting if they have been behaving well or not. Guardians can login to view their children's grades. Grades and students can be deleted by teachers.",
-  info:['Github: https://github.com/TerrellTerry/Daycare-Report-Card-System',
-  'Website: https://gentle-ground-0eb1fbf1e.2.azurestaticapps.net/'],
+  description: "The Daycare Report Card System is an application for recording the behavior of students at a local daycare center.",
+  info:['Github: https://github.com/TerrellTerry/Daycare-Report-Card-System'],
   skills:'Java | HTML | CSS | JavaScript | Javalin | PostgreSQL | Azure | Docker',
    category:'software',
     media:[

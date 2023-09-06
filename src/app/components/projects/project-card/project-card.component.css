@@ -27,6 +27,8 @@ button{
     margin-left: 3em;
     /* margin-bottom: 8em; */
     border: 4em 4em;
+    word-wrap: break-word;
+    width: 500px;
 }
 
 .back {
