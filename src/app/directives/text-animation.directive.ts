@@ -5,7 +5,7 @@ import { Directive, ElementRef, EventEmitter, Input, Output, Renderer2 } from '@
 })
 export class TextAnimationDirective {
   @Input() text: string = '';
-  @Input() delay: number = 100;
+  @Input() delay: number = 10;
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {}
 

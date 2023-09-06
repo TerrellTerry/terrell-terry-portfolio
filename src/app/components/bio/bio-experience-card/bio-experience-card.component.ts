@@ -21,12 +21,12 @@ export class BioExperienceCardComponent {
     <em>Bachelor's of Science in Game Design</em>`
   ]
   experience = [
-    `<b>Revature | Mar 2022 - January 2023</b>
+    `<b>Genesis10 | Jul 2023 - Present</b>
     <br>
     <br>
     <em>Full Stack Developer</em>`,
 
-    `<b>Revature | Mar 2022 - January 2023</b>
+    `<b>Independant Contractor | Jan 2023 - Aug 2023</b>
     <br>
     <br>
     <em>Full Stack Developer</em>`,

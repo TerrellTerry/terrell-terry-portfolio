@@ -5,31 +5,35 @@
     </div>
     <div class="skill-grid" *ngIf="fadedIn">
         <div class="skill-grid-item">
-            <h5>Skill Category</h5>
-            <p appTextAnimation [text]="gamesSkillsText" [delay]="delay" *ngIf="!isShowingSoftware">
+            <h5 appTextAnimation [text]="gamesSkillsText[0].title" *ngIf="!isShowingSoftware"></h5>
+            <h5 appTextAnimation [text]="softwareSkillsText[0].title" *ngIf="isShowingSoftware"></h5>
+            <p appTextAnimation [text]="gamesSkillsText[0].skills" [delay]="delay" *ngIf="!isShowingSoftware">
             </p>
-            <p appTextAnimation [text]="softwareSkillsText" [delay]="delay" *ngIf="isShowingSoftware">
-            </p>
-        </div>
-        <div class="skill-grid-item">
-            <h5>Skill Category</h5>
-            <p appTextAnimation [text]="gamesSkillsText" [delay]="delay" *ngIf="!isShowingSoftware">
-            </p>
-            <p appTextAnimation [text]="softwareSkillsText" [delay]="delay" *ngIf="isShowingSoftware">
+            <p appTextAnimation [text]="softwareSkillsText[0].skills" [delay]="delay" *ngIf="isShowingSoftware">
             </p>
         </div>
         <div class="skill-grid-item">
-            <h5>Skill Category</h5>
-            <p appTextAnimation [text]="gamesSkillsText" [delay]="delay" *ngIf="!isShowingSoftware">
+            <h5 appTextAnimation [text]="gamesSkillsText[1].title" *ngIf="!isShowingSoftware"></h5>
+            <h5 appTextAnimation [text]="softwareSkillsText[1].title" *ngIf="isShowingSoftware"></h5>
+            <p appTextAnimation [text]="gamesSkillsText[1].skills" [delay]="delay" *ngIf="!isShowingSoftware">
             </p>
-            <p appTextAnimation [text]="softwareSkillsText" [delay]="delay" *ngIf="isShowingSoftware">
+            <p appTextAnimation [text]="softwareSkillsText[1].skills" [delay]="delay" *ngIf="isShowingSoftware">
             </p>
         </div>
         <div class="skill-grid-item">
-            <h5>Skill Category</h5>
-            <p appTextAnimation [text]="gamesSkillsText" [delay]="delay" *ngIf="!isShowingSoftware">
+            <h5 appTextAnimation [text]="gamesSkillsText[2].title" *ngIf="!isShowingSoftware"></h5>
+            <h5 appTextAnimation [text]="softwareSkillsText[2].title" *ngIf="isShowingSoftware"></h5>
+            <p appTextAnimation [text]="gamesSkillsText[2].skills" [delay]="delay" *ngIf="!isShowingSoftware">
             </p>
-            <p appTextAnimation [text]="softwareSkillsText" [delay]="delay" *ngIf="isShowingSoftware">
+            <p appTextAnimation [text]="softwareSkillsText[2].skills" [delay]="delay" *ngIf="isShowingSoftware">
+            </p>
+        </div>
+        <div class="skill-grid-item">
+            <h5 appTextAnimation [text]="gamesSkillsText[3].title" *ngIf="!isShowingSoftware"></h5>
+            <h5 appTextAnimation [text]="softwareSkillsText[3].title" *ngIf="isShowingSoftware"></h5>
+            <p appTextAnimation [text]="gamesSkillsText[3].skills" [delay]="delay" *ngIf="!isShowingSoftware">
+            </p>
+            <p appTextAnimation [text]="softwareSkillsText[3].skills" [delay]="delay" *ngIf="isShowingSoftware">
             </p>
         </div>
     </div>

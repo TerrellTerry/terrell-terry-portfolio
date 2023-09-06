@@ -14,10 +14,20 @@ export class BioSkillsCardComponent {
   showCursor:boolean = false;
   fadedIn:boolean = false;
 
-  softwareSkillsText:string = 'Java | Skill | Skill | Skill | Skill | Skill | Skill | Skill |'
-  +' Skill | Skill | Skill | Skill'; // Replace with your desired text
-  gamesSkillsText:string = 'C# | Skill | Skill | Skill | Skill | Skill | Skill | Skill |'
-  +' Skill | Skill | Skill | Skill'
+  softwareSkillsText = [
+    {title: 'Backend', skills:'Java | C# | Python | Spring Framework | JDBC | Javalin | Flask |'
+    +' TDD | Microsoft Azure |'
+  +' AWS (Amazon Web Services) | Docker'},
+  {title: 'Frontend', skills:'Angular | React | HTML | CSS | JavaScript | TypeScript'},
+  {title: 'Databases', skills:'PostgreSQL | MySQL | MongoDB'},
+  {title: 'Supporting Tech', skills:'Gradle | Maven | Node.js | Postman | JSON | SonarCloud | Github | Git | Perforce | JUnit'}
+];
+  gamesSkillsText = [
+    {title: 'Technical', skills:'C# | Unity | Unreal Engine | Unity Animation | AI Programming'},
+  {title: 'Core Design', skills:'Game Mechanics | Prototyping | Game Balancing | UX | Level Design | Game Design Documentation'},
+  {title: 'Testing and Iteration', skills:'Playtesting | Feedback Analysis | User Research | UX Iteration | Version Control'},
+  {title: 'Communication and Collaboration', skills:'Teamwork | Cross-Functional Collaboration | Clear Communication | Organization | Team-Building | Leadership'}
+  ];
 
   isShowingSoftware:boolean = true;
 
