@@ -48,3 +48,17 @@ button{
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .git {
+        left: 25px;
+    }
+    
+    .email{
+        left: 25px;
+    }
+    
+    .linked-in{
+        left: 25px;
+    }
+}

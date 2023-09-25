@@ -61,13 +61,15 @@ button{
 @media screen and (max-width: 1200px) {
     .description{
         margin-bottom: 0;
+        width: 350px;
     }
     .project-card{
         min-width: 400px;
-        max-height: 500px;
+        max-height: 600px;
     }
     .button-container{
         margin-right: 0;
         margin-top: 20px;
+        width: 500px;
     }
 }

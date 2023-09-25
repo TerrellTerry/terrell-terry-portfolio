@@ -36,8 +36,8 @@ export class ProjectModuleComponent {
      {url: 'assets/images/projects/default.png', youtube:false}
    ]  },    { title: 'SCRAPS',
    description: "A game where I worked on a level as part of a team from Full Sail University. The level created was to obtain a golden honeybun and give it to the bastions (the quest givers). Within my level, I utilized the introduce, practice, master design patterns for introducing new mechanics to the player.",
-   info:['Mechanics: Breakable wall, pressure plate system'],
-   skills:'Level Design | C# Scripting | ',
+   info:['Mechanics: Breakable wall, pressure plate system, oil spills'],
+   skills:'Level Design | C# | Unity | Systems Design | Playtesting | Collaboration',
     category:'games',
      media:[
     {url: 'assets/images/projects/default.png', youtube:false}
@@ -50,10 +50,8 @@ export class ProjectModuleComponent {
    {url: 'assets/images/projects/default.png', youtube:false}
  ]  },    { title: 'Project Lazy God',
  description: 'A top-down tower defense game where you play as the enemies that are preventing the heros from getting into your dungeon and stealing your resources, similar to the Dungeons series. From within the game, you are able to change and augment your boss, change and shape the terrain and place down towers on a grid.',
- info:['Github: <fa-icon [icon]="faGithub"></fa-icon>',
- 'Github: <fa-icon [icon]="faGithub"></fa-icon>',
- 'Github: <fa-icon [icon]="faGithub"></fa-icon>'],
- skills:'',
+ info:['No Content.'],
+ skills:'C# | Unity | Systems Design | Playtesting | Collaboration',
   category:'games',
    media:[
   {url: 'assets/images/projects/default.png', youtube:false}
