@@ -7,7 +7,7 @@
     <button [ngClass]="{ 'button': true, 'active': showing === 'games', 'inactive': showing !== 'games'}" (click)="changeCategory('games')">GAMES</button>
 </div>
 <div>
-    <div *ngFor="let project of projects">
+    <div class="project-container" *ngFor="let project of projects">
         <app-project-card *ngIf="project.category === showing || showing === 'all'" [project]="project"></app-project-card>
     </div>
 

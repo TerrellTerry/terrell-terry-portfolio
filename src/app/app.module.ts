@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { ContactComponent } from './components/contact/contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContactInfoComponent } from './components/contact/contact-info/contact-info.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MediaComponent,
     ScrollTopComponent,
     ContactComponent,
+    ContactInfoComponent,
   ],
   imports: [
     BrowserModule,

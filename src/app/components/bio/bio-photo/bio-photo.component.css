@@ -1,5 +1,5 @@
 .photo-card{
-    height: 700px;
+    height: 800px;
     width: 100%;
     transform: translateX(-100%);
     opacity: 0;
@@ -22,8 +22,9 @@ img{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .photo-card {
+        max-width: 500px;
         width: 500px;
         height: 600px;
     }

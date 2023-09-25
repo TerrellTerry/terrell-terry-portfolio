@@ -1,3 +1,9 @@
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 .section-title{
     font-family: ASH, Arial, Helvetica, sans-serif;
     color: white;
@@ -17,4 +23,10 @@
 button{
     font-size: 16px;
     padding: 1em 4em;
+}
+
+@media screen and (max-width: 1200px) {
+    .button-container{
+        gap: 2em;
+    }
 }

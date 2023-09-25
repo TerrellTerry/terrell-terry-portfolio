@@ -34,7 +34,7 @@ p {
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .skill-card{
         height: 600px;
         width: 500px;

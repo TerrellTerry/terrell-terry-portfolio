@@ -1,34 +1,43 @@
 .project-card{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10%;
+    align-items: center; */
     margin-top: var(--row-gap);
-    align-items: center;
     border-radius: 25px;
+    max-height: 450px;
+    min-height: 450px;
 }
+
+/* Temporary CSS until I can get the formatting correct with the media (LOL) */
+
 
 .description-container{
     display: grid;
-    grid-template-rows: 1f 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .button-container{
-    position: absolute;
-    bottom: 25px;
-    left: 75px;
+    display: flex;
+    align-content: center;
+    height: 50px;
+    /* position: absolute; */
 }
 
 button{
-    margin-right: 50px;
     padding: 1em 3em;
+    margin-right: 50px;
 }
 
 .description{
-    margin-left: 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-right: 1em;
+    margin-left: 1em;
     /* margin-bottom: 8em; */
     border: 4em 4em;
     word-wrap: break-word;
-    width: 500px;
+    /* width: 500px; */
 }
 
 .back {
@@ -48,4 +57,18 @@ button{
   }
 .back:hover{
     background-color: rgba(0,0,0,0.8);
+}
+
+@media screen and (max-width: 1200px) {
+    .description{
+        margin-bottom: 0;
+    }
+    .project-card{
+        min-width: 400px;
+        max-height: 500px;
+    }
+    .button-container{
+        margin-right: 0;
+        margin-top: 20px;
+    }
 }

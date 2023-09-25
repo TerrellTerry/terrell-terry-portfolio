@@ -1,7 +1,7 @@
 .bio-module-container{
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 10%; 
+    gap: 5%; 
     margin-top: var(--row-gap); 
     margin-bottom: var(--row-gap);
     align-items: center;
@@ -17,7 +17,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .bio-module-container {
         grid-template-columns: unset;
         display: flex;

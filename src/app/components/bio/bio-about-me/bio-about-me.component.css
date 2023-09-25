@@ -1,5 +1,5 @@
 .about-me-card {
-    height: 700px;
+    height: 800px;
     width: 100%;
     opacity: 0;
     transform: translateX(100%);
@@ -32,12 +32,16 @@
     max-width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .about-me-card {
         margin-top: var(--row-gap);
         width: 500px;
+        max-width: 500px;
     }
 }
+/* @media screen and (min-width: 768px) and (max-width: ){
+
+} */
 
 .text-container {
     display: inline-block;

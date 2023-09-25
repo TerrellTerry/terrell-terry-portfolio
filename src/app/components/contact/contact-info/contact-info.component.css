@@ -1,0 +1,50 @@
+div{
+    opacity: 0;
+}
+
+.git {
+    position: fixed;
+    left: 100px;
+    bottom: 400px;
+    color: orange;
+}
+
+.email{
+    position: fixed;
+    left: 100px;
+    bottom: 300px;
+    color: white;
+}
+
+.linked-in{
+    position: fixed;
+    left: 100px;
+    bottom: 200px;
+    color: #0072b1;
+}
+
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #333;
+}
+
+.scroll-top-button{
+
+}
+
+.scroll-top-button-inactive{
+    opacity: 0;
+}
+
+.animate {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

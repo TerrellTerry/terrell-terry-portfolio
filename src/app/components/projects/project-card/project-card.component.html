@@ -24,7 +24,9 @@
             <button *ngIf="project.info.length >= 0" (click)="changeShowing('moreInfo')" class="button project-button"  [ngClass]="{'active': showing === 'moreInfo', 'inactive': showing !== 'moreInfo'}">More Info</button>
         </div>
     </div>
-    <div>
+    <!-- Need to work on improving the layout of this, get some images/videos of projects 
+        and add a button when screen is too small -->
+    <!-- <div>
         <app-media class="media" [project]="project"></app-media>
-    </div>
+    </div> -->
 </div>
