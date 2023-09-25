@@ -18,10 +18,9 @@
 }
 
 .button-container{
-    display: flex;
-    align-content: center;
     height: 50px;
-    /* position: absolute; */
+    position: absolute;
+    bottom: 50px;
 }
 
 button{
